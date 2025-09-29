@@ -1,0 +1,59 @@
+electricity - 0.82 kilograms of CO2 per kilowatt-hour
+
+coal - 2.42 kilograms of carbon dioxide (CO2)
+
+lpg - 1.51 kilograms of CO2
+
+flight - 246 grams of CO2 per passenger kilometer
+
+business -3X, first 9X
+
+car - 121 grams of CO2 per kilometer
+
+bike - 21 grams of CO2 per kilometer
+
+bus - 849.95 grams of CO2 per kilometer in urban traffic
+
+train - 11.5 grams of CO2e per passenger-kilometer
+
+auto - 0.1135 kilograms of CO2 per kilometer
+
+taxi - 121 grams of CO2 per kilometer
+
+metro - 32.38 grams of CO2 per kilometer traveled
+
+food - 30kg per month
+
+pharma - 0.5 kg CO2 equivalent per year || 0.042 kg of carbon per month.
+
+clothes - 6-8 kg of CO2 equivalent || 1 kg per month
+
+paper - 1 kg of CO2 per kg || 1.25kg per month
+
+computer - 20-30 kg of CO2 equivalent per year || 331 kg
+
+electronic - For every 2.2 pounds of electronics produced, nearly 50 lb of carbon dioxide (CO2) is released into the atmosphere
+
+call - 0.05 kg of CO2 per hour of call time
+
+sports - 514 kg CO2e per year || 42.833 kg per month
+
+function savedata(){
+    localStorage.setItem("houseresult", output1.innerHTML);
+    localStorage.setItem("flightresult", output2.innerHTML);
+    localStorage.setItem("carresult", output3.innerHTML);
+    localStorage.setItem("bikeresult", output4.innerHTML);
+    localStorage.setItem("transresult", output5.innerHTML);
+    localStorage.setItem("seconresult", output6.innerHTML);
+}
+
+function loaddata(){
+    output1.innerHTML = localStorage.getItem("houseresult");
+    output2.innerHTML = localStorage.getItem("flightresult");
+    output3.innerHTML = localStorage.getItem("carresulta");
+    output4.innerHTML = localStorage.getItem("bikeresult");
+    output5.innerHTML = localStorage.getItem("transresult");
+    output6.innerHTML = localStorage.getItem("seconresult");
+}
+
+loaddata();

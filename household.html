@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carbon Footprint Calculator - Household</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <button class="menu-btn" id="menuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Desktop Navigation -->
+  <nav id="desktop">
+    <a href="index.html">Home</a>
+    <a href="household.html" class="active">Household</a>
+    <a href="Flight.html">Flights</a>
+    <a href="car.html">Cars</a>
+    <a href="bike.html">Bike</a>
+    <a href="bus&rails.html">Bus & Rails</a>
+    <a href="secondary.html">Secondary</a>
+    <a href="result.html">Result</a>
+  </nav>
+
+  </header>
+
+  <!-- Side Navigation -->
+  <nav class="side-nav" id="sideNav">
+    <div class="nav-item"><a href="index.html">Home</a></div>
+    <div class="nav-item active"><a href="household.html" class="active">Household</a></div>
+    <div class="nav-item"><a href="Flight.html">Flights</a></div>
+    <div class="nav-item"><a href="car.html">Cars</a></div>
+    <div class="nav-item"><a href="bike.html">Bike</a></div>
+    <div class="nav-item"><a href="bus&rails.html">Bus & Rails</a></div>
+    <div class="nav-item"><a href="secondary.html">Secondary</a></div>
+    <div class="nav-item"><a href="result.html">Result</a></div>
+  </nav>
+
+  <!-- Main Section -->
+  <main id="sec">
+    <div class="container2">
+      <h2>Household</h2>
+
+      <label for="electricity">Electricity Use (kWh per month):</label>
+      <input type="number" id="electricity" placeholder="Enter kWh">
+
+      <label for="coal">Coal (metric ton):</label>
+      <input type="number" id="coal" placeholder="Enter coal usage">
+
+      <label for="LPG">LPG (litres):</label>
+      <input type="number" id="LPG" placeholder="Enter LPG usage">
+
+      <button class="outputclick" id="calcHouseholdBtn">
+        Calculate Household Footprint
+      </button>
+      <br><br>
+
+      <h3 id="output1"></h3>
+
+      <a href="Flight.html" class="cssbuttons-io-button">
+        Flights
+        <div class="icon">
+          <svg height="24" width="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M16.172 11l-5.364-5.364 
+                     1.414-1.414L20 12l-7.778 7.778
+                     -1.414-1.414L16.172 13H4v-2z" 
+                     fill="currentColor"></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
