@@ -38,7 +38,7 @@ header {
 .menu-head{
   color: white;
   margin-left: 10px;
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-family: monospace;
   display: none;
 }
@@ -98,7 +98,6 @@ nav a.active {
 }
 
 .container {
-  background: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -190,7 +189,7 @@ h2{
   /* == second page == */
 
 .container2 {
-  background: white;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -199,7 +198,7 @@ h2{
 }
 
 input, select, button {
-  width: 95%;
+  width: 85%;
   margin: 10px 0;
   padding: 10px;
 }
@@ -216,7 +215,6 @@ input, select{
   padding: 20px;
   max-width: 600px;
   margin: auto;
-  background-color: #f4f4f4;
   margin-top: 100px;
 }
 
@@ -258,7 +256,14 @@ input, select{
 /* == Flights page == */
 
 #trips{
-  width: 91%;
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  size: 10px;
+}
+
+#class{
+  width: 98%;
   margin: 10px 0;
   padding: 10px;
   size: 10px;
@@ -276,7 +281,7 @@ input, select{
 /* == bus&rails ==  */
 
 .container3 {
-  background: white;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -394,8 +399,8 @@ h3{
     }
 
     .cssbuttons-io-button {
-      font-size: 16px;
-      height: 2em;
+      font-size: 17px;
+      height: 2.6em;
       width: 150px;
       padding-right: 2.5em;
     }
@@ -423,8 +428,8 @@ h3{
 
     .outputclick {
       width: 200px;
-      height: 40px;
-      font-size: 0.8em;
+      height: 60px;
+      font-size: 1em;
     }
 
     .container4 {
@@ -434,17 +439,40 @@ h3{
 
     #sec2{
       width: 90%;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr;
+      font-size: 1em;
     }
 
     #secondary{
       width: 90%;
       font-size: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #people{
-      width: 100%;
+      width: 70%;
+      height: 20px;
       font-size: 1.2em;
+    }
+
+    .INR{
+      width: 120px
+    }
+
+    .per{
+      width: 110px;
+    }
+
+    .trans{
+      width: 50%;
+    }
+
+    #suggestion{
+      width: 90%;
+      margin-left: 0;
+      font-size: 1em;
     }
   }
