@@ -28,12 +28,20 @@ header {
   color: white;
   font-size: 1.5rem;
   cursor: pointer;
+  width: 40px;
 }
 
 .spacer {
   width: 24px;
 }
 
+.menu-head{
+  color: white;
+  margin-left: 10px;
+  font-size: 1.8em;
+  font-family: monospace;
+  display: none;
+}
 /* Navigation */
 nav#desktop {
   background-color: #003333;
@@ -120,9 +128,6 @@ h2{
   font-size: 2.5em;
   color: black;
   font-family: monospace;
-}
-.side-nav{
-  visibility: collapse;
 }
 
 .cssbuttons-io-button {
@@ -368,6 +373,11 @@ h3{
     } 
      .menu-btn {
       display: block;
+    }
+
+    .menu-head{
+      display: block;
+      transform: translate(1px, -13px);
     }
 
     .side-nav{

@@ -162,7 +162,7 @@ function show_suggestion(){
     suggestion.style.visibility = "visible";
 }
 
-window.addEventListener('DOMContentLoaded', () => {
+/* window.addEventListener('DOMContentLoaded', () => {
     calculateTotal();
 
     document.querySelectorAll('input').forEach(input => {
@@ -173,4 +173,12 @@ window.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem(input.id, input.value);
         });
     });
-});
+}); */
+
+// Side navigation toggle
+function toggleSideNav() {
+  document.getElementById("sideNav").classList.toggle("open");
+}
+
+const menuBtn = document.getElementById("menuBtn");
+  if (menuBtn) menuBtn.addEventListener("click", toggleSideNav);
